@@ -1,4 +1,7 @@
+import { User } from './../models/user.models';
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormControl, Validators, NgForm } from '@angular/forms';
+
 
 @Component({
   selector: 'app-sign-up',
@@ -7,9 +10,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignUpComponent implements OnInit {
 
+  model: User = new User('', '', '', '');
+
   constructor() { }
 
 title = "Comon! SignUp budy !!";
+
+onSubmit(): void {
+  // Formulaire envoyé
+  console.log(this.model);
+}
+
   ngOnInit(): void {
   }
 

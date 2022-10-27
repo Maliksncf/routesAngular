@@ -6,7 +6,7 @@ import { Routes } from '@angular/router';
 const ROUTES: Routes = [
   { path: 'signup', component: SignUpComponent },
   { path: 'user', component: UserProfileComponent },
-  { path: '', redirectTo: 'user', pathMatch: 'full' }
+  { path: '', component: UserProfileComponent },
 ];
 
 export { ROUTES };
